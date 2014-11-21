@@ -11,8 +11,6 @@
             templateUrl: '/app/market/market-stats-boxes.html',
             controller: function ($scope, $timeout, MarketService, $log) {
 
-                $scope.marketList = [];
-
                 (function refresh() {
                     MarketService.getMarkets().then(function (markets) {
                         $scope.marketList = markets;
