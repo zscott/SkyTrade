@@ -1,14 +1,14 @@
 (function () {
-    var app = angular.module('auth.userAuthenticator',
+    var app = angular.module('auth.userAuth',
         [
-            'auth.authenticationSvc',
+            'auth.authSvc',
             'markets'
         ]);
 
-    app.directive('userAuthenticator', function () {
+    app.directive('userAuth', function () {
         return {
             restrict: 'E',
-            templateUrl: '/app/auth/user-authenticator.html',
+            templateUrl: '/app/auth/user-auth.html',
             controller: function ($scope, $rootScope, AuthService, AUTH_EVENTS, $log) {
 
                 this.creds = {};

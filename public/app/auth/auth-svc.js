@@ -1,5 +1,5 @@
 (function () {
-    var app = angular.module('auth.authenticationSvc',
+    var app = angular.module('auth.authSvc',
         [
             'ngCookies'
         ]);

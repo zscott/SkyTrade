@@ -1,7 +1,7 @@
 (function () {
     var app = angular.module('directives',
         [
-            'auth.authenticationSvc',
+            'auth.authSvc',
             'markets'
         ]);
 
