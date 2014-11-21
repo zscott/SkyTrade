@@ -1,8 +1,7 @@
 (function () {
     var app = angular.module('auth.userAuth',
         [
-            'auth.authSvc',
-            'markets'
+            'auth.authSvc'
         ]);
 
     app.directive('userAuth', function () {

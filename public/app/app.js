@@ -3,10 +3,9 @@
     var app = angular.module('falcon',
         [
             'ngCookies',
+            'nav.mainMenu',
             'auth.userAuth',
-            'auth.authSvc',
-            'markets',
-            'directives'
+            'market.statsBoxes'
         ]);
 
 
