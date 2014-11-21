@@ -3,7 +3,8 @@
     var app = angular.module('falcon',
         [
             'ngCookies',
-            'authentication',
+            'auth.userAuthenticator',
+            'auth.authenticationSvc',
             'markets',
             'directives'
         ]);

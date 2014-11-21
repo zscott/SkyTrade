@@ -1,5 +1,8 @@
 (function () {
-    var app = angular.module('markets', []);
+    var app = angular.module('markets',
+        [
+
+        ]);
 
     app.factory('MarketService', ['$log', '$http', function ($log, $http) {
 

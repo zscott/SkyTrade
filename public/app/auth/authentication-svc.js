@@ -1,5 +1,8 @@
 (function () {
-    var app = angular.module('authentication', ['ngCookies']);
+    var app = angular.module('auth.authenticationSvc',
+        [
+            'ngCookies'
+        ]);
 
     app.constant('USER_ROLES', {
         all: '*',
