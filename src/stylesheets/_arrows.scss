@@ -1,0 +1,18 @@
+
+.arrow-sprite {
+  display: inline-block;
+  overflow: hidden;
+  background-image: url(/images/up-down-arrows.png);
+  background-size: 15px 24px;
+  width: 15px;
+  height: 12px;
+  margin: 0 3px 0 3px;
+
+  &.up {
+    background-position: 0 0;
+  }
+
+  &.down {
+    background-position: 0 -12px;
+  }
+}

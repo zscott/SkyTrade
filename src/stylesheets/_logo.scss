@@ -1,0 +1,23 @@
+// Logo Settings
+$logo-font-size: 32px;
+$logo-font-weight: bold;
+$logo-text-color: #fff;
+
+a.logo {
+  display: block;
+  float: left;
+  background: url(/images/isolated-balloon-60x77.png) top left no-repeat;
+  width: 60px;
+  height: 77px;
+  text-indent: -9999px;
+}
+
+p.logo {
+  position: relative;
+  top: -7px;
+  left: 35px;
+  font-size: $logo-font-size;
+  font-weight: $logo-font-weight;
+  color: $logo-text-color;
+}
+

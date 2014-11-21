@@ -1,0 +1,43 @@
+/* Base Font Settings */
+$body-font-family: proxima-nova, Sans-serif;
+$body-font-size: (16/12)em;
+$body-line-height: 1.4;
+
+$headline-font-size: (48/12)em;
+
+$b-head-font-size: 2em;
+
+$sm-heading-font-weight: plain;
+
+$nav-font-size: $body-font-size;
+
+$byline-font-size: 1em;
+
+$tiny-font-size: 1em;
+
+body {
+  font-family: $body-font-family;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+}
+
+h1 {
+  font-size: $headline-font-size;
+}
+
+h2 {
+  font-size: $b-head-font-size;
+}
+
+h3 {
+  font-size: $body-font-size;
+  font-weight: $sm-heading-font-weight;
+}
+
+a {
+  text-transform: uppercase;
+}
+
+a:hover {
+  text-decoration: none;
+}

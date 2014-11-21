@@ -1,0 +1,33 @@
+/* Begin _colors.scss */
+
+// Color Scheme
+$swatch-1: #664A2C;
+$swatch-2: #108BBB;
+$swatch-2-lighter: #15B0E8;
+$swatch-3: #FF8400;
+$swatch-4: #C7AC8F;
+$swatch-5: #05181F;
+
+
+// Color Scheme Assignment
+$link-color-swatch: swatch-2;
+
+
+// Base Color Settings
+$bg-color: #fff;
+$text-color: #000;
+$subtle-text-color: #999;
+
+body {
+  background-color: $bg-color;
+}
+
+a, a:visited {
+  color: #{$swatch-2};
+}
+
+a:hover {
+  color: #{$swatch-2-lighter};
+}
+
+/* End _colors.scss */

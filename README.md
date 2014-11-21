@@ -1,4 +1,5 @@
-FalconEx-App
-============
+SkyTrade
+========
 
-In-browser application that intereacts with the FalconEx platform via the REST API.
+In-browser AngularJS application that interacts with the backend FalconEx trading platform via the REST API.
+

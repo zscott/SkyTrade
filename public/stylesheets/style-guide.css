@@ -1,0 +1,106 @@
+body, p, ul, li, ol, a, h1, h2, h3, h4, h5 {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}
+body {
+	margin: 50px;
+}
+
+section.colors {
+	float: left;
+	width: 200px;
+}
+
+.colors ul li {
+	display: block;
+	width: 100px;
+	height: 50px;
+	margin: 0 auto 15px auto;
+	text-indent: -9999px;
+}
+
+.colors ul li.primary {
+	background: #664A2C;
+}
+
+.colors ul li.secondary {
+	background: #108BB8;
+}
+
+.colors ul li.tertiary {
+	background: #FF8400;
+}
+
+.colors ul li.fourth {
+	background: #C7AC8F;
+}
+
+.colors ul li.fifth {
+	background: #05181F;
+}
+
+section.fonts {
+	display: inline-block;
+}
+
+.nav li {
+	font-weight: bold;
+	color: #108BB8;
+}
+
+ul.nav li {
+	display: inline;
+	padding: 0 5px 0 0;
+}
+
+ul.nav li:after {
+	content: '|';
+	padding: 0 0 0 8px;
+}
+
+ul.nav li:last-child:after {
+	content: '';
+	padding: 0;
+}
+
+h1, h2, .nav, .main-content {
+	margin: 0 0 25px 0;	
+}
+
+/*
+ * Headline should be 200-300% of body copy size
+ */
+h1 {
+	font-size: 48px;
+}
+
+/*
+ * B-Head should be 150% body copy size
+ */
+h2 {
+	font-size: 24px;
+}
+
+p {
+	font-size: 16px;
+	margin: 0 0 16px 0;
+	line-height: 1.4;   /* line-height range 1.2 - 1.5 */
+	max-width: 418px;
+}
+
+/*
+ * Byline copy should be 2-4px smaller than body or 75%.
+ */
+.byline {
+	font-size: 12px;
+}
+
+/*
+ * drop font size in responsive design to keep cpl up.
+
+ * Line length (CPL)
+ * This is body copy. Lorem ipsum dolor sit amet, consectetur - 58 @ 420px
+ * mollis imperdiet, velit dui varius nunc, eget laoreet erat leo - 62 @ 380px 
+ */
+

@@ -1,0 +1,20 @@
+<div class="user-authenticator">
+    <div ng-hide="currentUser">
+        <form name="authForm" novalidate>
+            <input id="username" type="text" ng-model="authCtrl.creds.username" placeholder="username" required/>
+            <input id="password" type="password" ng-model="authCtrl.creds.password" placeholder="password" required/>
+            <button ng-click="authCtrl.authenticate()" class="btn btn-sm btn-high-visible">GET TRADING</button>
+        </form>
+        <div class="pull-right group tiny help">(no account? <a href="#">get started</a>)</div>
+    </div>
+
+    <div class="authenticated" ng-show="currentUser">
+        <form name="logoutForm" novalidate>
+            <div class="user">
+                <img class="avatar" src="/images/male-silhouette.gif"/>
+                <a class="profile" href="#">{{currentUser.username}}</a>
+            </div>
+            <button ng-click="authCtrl.terminateSession()" class="btn-sign-out">SIGN OUT</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,187 @@
+@import "bootstrap";
+
+@import "15-col-bootstrap";
+
+@import "clearfix";
+
+@import "logo";
+
+body, p, ul, ol, li, a, h1, h2, h3, h4, h5 {
+  padding: 0;
+  margin: 0;
+}
+
+@import "fonts";
+
+@import "colors";
+
+@import "buttons";
+
+@import "arrows";
+
+@import "market-stats-box";
+
+body {
+  background: $bg-color url(/images/clean-cold-sky-bg.jpg) top left no-repeat;
+  background-size: cover;
+  margin : 32px 0 0 0;
+}
+
+.main-content {
+  margin-top: 50px;
+}
+
+header, section {
+  margin: 0 0 25px 0;
+}
+
+section.footer {
+  margin: 0;
+}
+
+.help {
+  padding: 2px 0 2px 0;
+}
+
+.tiny {
+  font-size: $tiny-font-size;
+  color: $subtle-text-color;
+}
+
+.tiny a {
+  text-transform: lowercase;
+}
+
+ul.navi li {
+  display: inline;
+  margin: 0 30px 0 0;
+}
+
+/*
+ * user-uthenticator
+ */
+.user-authenticator {
+  float: right;
+  width: 330px;
+}
+
+form[name=authForm] input {
+  width: 100px;
+  padding: 1px 5px 1px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.authenticated {
+  float: right;
+  overflow: visible;
+  height: 20px;
+}
+
+.authenticated .user {
+  display: inline-block;
+  position: relative;
+  height: 20px;
+  width: 70px;
+}
+
+.authenticated .user .avatar {
+  display: inline-block;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  margin-right: 5px;
+  width: auto;
+  height: 20px;
+}
+
+.authenticated .user .profile {
+  display: inline-block;
+  position: absolute;
+  bottom: -5px;
+  left: 30px;
+  text-transform: none;
+}
+
+.btn-sign-out {
+  @extend .btn;
+  @extend .btn-sm;
+  @extend .btn-high-visible;
+  padding: 0 5px;
+  text-transform: lowercase;
+  font-size: (8/12)em;
+}
+
+.panel {
+  border-color : green ;
+  height : 110px;
+}
+
+section.get-started {
+  padding: 25px 0 0 25px;
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 400px;
+}
+
+.footer {
+  color: #aaa;
+  background: #072029;
+  height: 300px;
+  padding-top: 60px;
+}
+
+.footer .links {
+  width: 500px;
+  margin: 0 auto 0 auto;
+}
+
+.footer ul li {
+  display: inline;
+  margin: 0 60px 0 0;
+}
+
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+.currency-pair {
+  font-size-adjust: 10;
+  color: #cc9453
+}
+
+.up-tick-arrow {
+  color: #00ff00;
+}
+
+.down-tick-arrow {
+  color: #f00;
+}
+
+.table-striped.buy-orders>tbody>tr:nth-child(odd)>td,
+.table-striped.buy-orders>tbody>tr:nth-child(odd)>th {
+  background-color: #f1ffea;
+}
+
+.table-striped.sell-orders>tbody>tr:nth-child(odd)>td,
+.table-striped.sell-orders>tbody>tr:nth-child(odd)>th {
+  background-color: #ffe4da;
+}
+
+#OrderBookTable,
+#OrderBookChart {
+  height: 500px;
+  width: 80%;
+}
+
+#OrderBookDepthChart {
+  height: 500px;
+  width: 70%;
+}
+
+.money-amount {
+  font-size: 9pt;
+}
+
+.trailing-zeros {
+  color: #aaa;
+}

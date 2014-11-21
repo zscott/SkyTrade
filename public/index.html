@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app="falcon">
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href='/stylesheets/main.css'/>
+    <script src="//use.typekit.net/xli4xrp.js"></script>
+    <script>try { Typekit.load ( ) ; } catch ( e ) { }</script>
+    <title>AIR TRADE: Trade BTC - LTC - CAD</title>
+</head>
+<body ng-controller="ApplicationController">
+<div class="container">
+
+    <header>
+        <div class="row">
+
+            <div class="col-lg-3">
+                <a class="logo" href="/">SKY TRADE</a>
+                <p class="logo">SKY TRADE</p>
+            </div>
+
+            <div class="col-lg-4">
+                <main-menu></main-menu>
+            </div>
+
+            <div class="col-lg-5 group">
+                <user-authenticator></user-authenticator>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="markets">
+        <market-stats-boxes></market-stats-boxes>
+    </section>
+
+    <section class="trading-simply">
+        <h1>Trade. Simply.</h1>
+    </section>
+
+    <section class="get-started">
+        <div class="row">
+            <div class="col-xs-3">
+                <h3>Deposit Funds</h3>
+            </div>
+            <div class="col-xs-3">
+                <h3>Place Orders</h3>
+            </div>
+            <div class="col-xs-3">
+                <h3>Trade</h3>
+            </div>
+            <div class="col-xs-3">
+                <button type="submit" class="btn btn-lg btn-signup">GET STARTED</button>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section class="footer">
+    <div class="links">
+        <ul>
+            <li>About Us</li>
+            <li>Contact</li>
+            <li>Privacy</li>
+            <li>Jobs</li>
+        </ul>
+    </div>
+</section>
+
+<script type="text/javascript" src='/js/angular.min.js'></script>
+<script type="text/javascript" src='/js/angular-cookies.min.js'></script>
+<script type="text/javascript" src='/app/app.js'></script>
+<script type="text/javascript" src='/app/modules/authentication.js'></script>
+<script type="text/javascript" src='/app/modules/markets.js'></script>
+<script type="text/javascript" src='/app/directives/directives.js'></script>
+</body>
+</html>

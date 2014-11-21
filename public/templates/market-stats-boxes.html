@@ -1,0 +1,32 @@
+<div class="row same-height">
+    <div ng-repeat="market in marketList" class="market-stats-box">
+        <div class="contents">
+            <div class="market-symbol">
+                <p>{{market.symbol}}</p>
+            </div>
+            <div ng-hide="market.last">
+                <p>No Trades</p>
+            </div>
+            <ul ng-show="market.last" class="stats-list">
+                <li>
+                    <p class="stat-label">Price:</p>
+                    <p class="stat-value"><span class="arrow-sprite" ng-class="{true:'up', false:'down'}[market.upTick]"></span>{{market.last.amount}}<span class="tiny currency-code">{{market.counterCurrency.code}}</span></p>
+                </li>
+                <li>
+                    <p class="stat-label">24hr High:</p>
+                    <p class="stat-value">{{market.high.amount}}<span class="tiny currency-code">{{market.counterCurrency.code}}</span></p>
+                </li>
+                <li>
+                    <p class="stat-label">24hr Low:</p>
+                    <p class="stat-value">{{market.low.amount}}<span class="tiny currency-code">{{market.counterCurrency.code}}</span></p>
+                </li>
+                <li>
+                    <p class="stat-label">24hr Volume:</p>
+
+                    <p class="stat-value">{{market.vol.amount}}<span class="tiny currency-code">{{market.baseCurrency.code}}</span></p>
+                </li>
+            </ul>
+            <div class="tiny update-time"><p>(updated 3 sec ago)</p></div>
+        </div>
+    </div>
+</div>

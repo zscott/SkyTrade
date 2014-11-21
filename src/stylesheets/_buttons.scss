@@ -1,0 +1,105 @@
+/* Begin _buttons.scss */
+// Button Settings
+$btn-text-color: #fff;
+
+.btn-high-visible {
+  color: #FFFFFF;
+  background-color: #108BB8;
+  border-color: #108BB8;
+  padding: 5px 20px 3px;
+}
+
+.btn-high-visible:hover,
+.btn-high-visible:focus,
+.btn-high-visible:active,
+.btn-high-visible.active,
+.open .dropdown-toggle.btn-high-visible {
+  color: #FFFFFF;
+  background-color: #15B0E8;
+  border-color: #108BB8;
+}
+
+.btn-high-visible:active,
+.btn-high-visible.active,
+.open .dropdown-toggle.btn-high-visible {
+  background-image: none;
+}
+
+.btn-high-visible.disabled,
+.btn-high-visible[disabled],
+fieldset[disabled] .btn-high-visible,
+.btn-high-visible.disabled:hover,
+.btn-high-visible[disabled]:hover,
+fieldset[disabled] .btn-high-visible:hover,
+.btn-high-visible.disabled:focus,
+.btn-high-visible[disabled]:focus,
+fieldset[disabled] .btn-high-visible:focus,
+.btn-high-visible.disabled:active,
+.btn-high-visible[disabled]:active,
+fieldset[disabled] .btn-high-visible:active,
+.btn-high-visible.disabled.active,
+.btn-high-visible[disabled].active,
+fieldset[disabled] .btn-high-visible.active {
+  background-color: #108BB8;
+  border-color: #108BB8;
+}
+
+.btn-high-visible .badge {
+  color: #108BB8;
+  background-color: #FFFFFF;
+}
+
+.btn-signup {
+  color: #FFFFFF;
+  background-color: #FF8400;
+  border-color: #FF8400;
+}
+
+.btn-signup:hover,
+.btn-signup:focus,
+.btn-signup:active,
+.btn-signup.active,
+.open .dropdown-toggle.btn-signup {
+  color: #FFFFFF;
+  background-color: #FF9F38;
+  border-color: #FF8400;
+}
+
+.btn-signup:active,
+.btn-signup.active,
+.open .dropdown-toggle.btn-signup {
+  background-image: none;
+}
+
+.btn-signup.disabled,
+.btn-signup[disabled],
+fieldset[disabled] .btn-signup,
+.btn-signup.disabled:hover,
+.btn-signup[disabled]:hover,
+fieldset[disabled] .btn-signup:hover,
+.btn-signup.disabled:focus,
+.btn-signup[disabled]:focus,
+fieldset[disabled] .btn-signup:focus,
+.btn-signup.disabled:active,
+.btn-signup[disabled]:active,
+fieldset[disabled] .btn-signup:active,
+.btn-signup.disabled.active,
+.btn-signup[disabled].active,
+fieldset[disabled] .btn-signup.active {
+  background-color: #FF8400;
+  border-color: #FF8400;
+}
+
+.btn-signup .badge {
+  color: #FF8400;
+  background-color: #FFFFFF;
+}
+
+.btn-signup:after {
+  content: ' \00BB';
+  position: relative;
+  top: -2px;
+  font-size-adjust: 1.2;
+}
+
+/* End _buttons.scss */
