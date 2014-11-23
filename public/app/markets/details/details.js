@@ -1,19 +1,14 @@
 (function () {
-    var app = angular.module('markets',
+    var app = angular.module('markets.details',
         [
-            'markets.statsBoxes',
-            'markets.marketSvc',
-            'markets.details'
+
         ]);
 
     app.config(function($stateProvider) {
         $stateProvider
-            .state('app.markets', {
-               url: '/',
+            .state('app.markets.details', {
+                url: 'markets/{marketSymbol:.*}',
                 views: {
-                    'markets@': {
-                        templateUrl: 'app/markets/markets.html'
-                    },
                     'details@': {
                         templateUrl: 'app/markets/details/details.html',
                         controller: 'DetailsCtrl'
@@ -21,6 +16,10 @@
                 }
             })
         ;
+    });
+
+    app.controller('DetailsCtrl', function ($scope, $timeout, $stateParams) {
+        $scope.marketSymbol = $stateParams.marketSymbol;
     });
 
 })();

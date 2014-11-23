@@ -1,7 +1,6 @@
 (function () {
     var app = angular.module('markets.statsBoxes',
         [
-            'auth.authSvc',
             'markets.marketSvc'
         ]);
 
