@@ -2,7 +2,7 @@
     <div ng-repeat="market in marketList" class="market-stats-box">
         <div class="contents">
             <div class="market-symbol">
-                <p>{{market.symbol}}</p>
+                <a href ng-click="navigateToMarket(market)">{{market.symbol}}</a>
             </div>
             <div ng-hide="market.last">
                 <p>No Trades</p>
