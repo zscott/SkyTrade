@@ -1,21 +1,23 @@
 (function () {
 
-    var app = angular.module('falcon',
+    var app = angular.module('app',
         [
             'ui.router',
             'ngCookies',
             'nav.mainMenu',
             'auth.userAuth',
-            'market.statsBoxes'
+            'markets'
         ]);
 
-    app.config(function($stateProvider) {
+    app.config(function($stateProvider, $urlRouterProvider) {
         $stateProvider
-            .state('home', {
-                url:'/',
-                templateUrl: 'app/home.html'
+            .state('app', {
+                url:'',
+                abstract: true
             })
         ;
+
+        $urlRouterProvider.otherwise('/');
     });
 
     app.constant('COOKIE_NAMES', {

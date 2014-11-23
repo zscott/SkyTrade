@@ -1,5 +1,5 @@
 (function () {
-    var app = angular.module('market.marketSvc',
+    var app = angular.module('markets.marketSvc',
         [
 
         ]);

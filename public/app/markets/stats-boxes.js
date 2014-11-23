@@ -1,14 +1,14 @@
 (function () {
-    var app = angular.module('market.statsBoxes',
+    var app = angular.module('markets.statsBoxes',
         [
             'auth.authSvc',
-            'market.marketSvc'
+            'markets.marketSvc'
         ]);
 
     app.directive('marketStatsBoxes', function () {
         return {
             restrict: 'E',
-            templateUrl: '/app/market/market-stats-boxes.html',
+            templateUrl: '/app/markets/market-stats-boxes.html',
             controller: function ($scope, $timeout, MarketService, $log) {
 
                 (function refresh() {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="falcon">
+<html ng-app="app">
 <head lang="en">
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href='/stylesheets/main.css'/>
@@ -29,8 +29,15 @@
         </div>
     </header>
 
-    <div ui-view>
-    </div>
+    <section class="markets" ui-view="markets">
+    </section>
+
+    <section class="trading-simply">
+        <h1>Trade. Simply.</h1>
+    </section>
+
+    <section class="get-started" ui-view="details">
+    </section>
 </div>
 
 <section class="footer">
@@ -51,8 +58,9 @@
 <script type="text/javascript" src='/app/auth/user-auth.js'></script>
 <script type="text/javascript" src='/app/auth/auth-svc.js'></script>
 <script type="text/javascript" src='/app/auth/session-svc.js'></script>
-<script type="text/javascript" src='/app/market/stats-boxes.js'></script>
-<script type="text/javascript" src='/app/market/market-svc.js'></script>
+<script type="text/javascript" src='/app/markets/markets.js'></script>
+<script type="text/javascript" src='/app/markets/market-svc.js'></script>
+<script type="text/javascript" src='/app/markets/stats-boxes.js'></script>
 <script type="text/javascript" src='/app/nav/main-menu.js'></script>
 </body>
 </html>
