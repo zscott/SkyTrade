@@ -15,8 +15,7 @@
                         templateUrl: 'app/markets/markets.html'
                     },
                     'details@': {
-                        templateUrl: 'app/markets/details/details.html',
-                        controller: 'DetailsCtrl'
+                        templateUrl: 'app/markets/no-market-selected.html'
                     }
                 }
             })
