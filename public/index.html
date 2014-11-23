@@ -29,47 +29,8 @@
         </div>
     </header>
 
-    <section class="markets">
-        <market-stats-boxes></market-stats-boxes>
-        <div ng-hide="marketList" class="row same-height">
-            <div class="market-stats-box">
-                <div class="contents"></div>
-            </div>
-            <div class="market-stats-box">
-                <div class="contents"></div>
-            </div>
-            <div class="market-stats-box">
-                <div class="contents"></div>
-            </div>
-            <div class="market-stats-box">
-                <div class="contents"></div>
-            </div>
-            <div class="market-stats-box">
-                <div class="contents"></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="trading-simply">
-        <h1>Trade. Simply.</h1>
-    </section>
-
-    <section class="get-started">
-        <div class="row">
-            <div class="col-xs-3">
-                <h3>Deposit Funds</h3>
-            </div>
-            <div class="col-xs-3">
-                <h3>Place Orders</h3>
-            </div>
-            <div class="col-xs-3">
-                <h3>Trade</h3>
-            </div>
-            <div class="col-xs-3">
-                <button type="submit" class="btn btn-lg btn-signup">GET STARTED</button>
-            </div>
-        </div>
-    </section>
+    <div ui-view>
+    </div>
 </div>
 
 <section class="footer">
@@ -85,6 +46,7 @@
 
 <script type="text/javascript" src='/js/angular.min.js'></script>
 <script type="text/javascript" src='/js/angular-cookies.min.js'></script>
+<script type="text/javascript" src='/js/angular-ui-router.js'></script>
 <script type="text/javascript" src='/app/app.js'></script>
 <script type="text/javascript" src='/app/auth/user-auth.js'></script>
 <script type="text/javascript" src='/app/auth/auth-svc.js'></script>

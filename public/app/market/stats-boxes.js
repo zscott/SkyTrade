@@ -14,7 +14,7 @@
                 (function refresh() {
                     MarketService.getMarkets().then(function (markets) {
                         $scope.marketList = markets;
-                        $timeout(refresh, 1000);
+                        $timeout(refresh, 250);
                     }, function () {
                         $log.log("failed to get markets for market stats boxes");
                     });

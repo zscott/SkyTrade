@@ -2,12 +2,21 @@
 
     var app = angular.module('falcon',
         [
+            'ui.router',
             'ngCookies',
             'nav.mainMenu',
             'auth.userAuth',
             'market.statsBoxes'
         ]);
 
+    app.config(function($stateProvider) {
+        $stateProvider
+            .state('home', {
+                url:'/',
+                templateUrl: 'app/home.html'
+            })
+        ;
+    });
 
     app.constant('COOKIE_NAMES', {
         session: 'client-session-cookie',
@@ -15,7 +24,8 @@
     });
 
     app.controller('ApplicationController',
-        ['$log', '$scope', '$cookies', 'COOKIE_NAMES', 'USER_ROLES', 'AuthService', function ($log, $scope, $cookies, COOKIE_NAMES, USER_ROLES, AuthService) {
+        ['$log', '$scope', '$cookies', 'COOKIE_NAMES', 'USER_ROLES', 'AuthService',
+            function ($log, $scope, $cookies, COOKIE_NAMES, USER_ROLES, AuthService) {
             $scope.currentUser = null;
             $scope.userRoles = USER_ROLES;
             $scope.isAuthorized = AuthService.isAuthorized;
